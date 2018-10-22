@@ -1,0 +1,82 @@
+{
+  "rules": {
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "keyword-spacing": 2,
+    "no-console": 0,
+    "comma-dangle": 0,
+    "import/no-unresolved": 0,
+    "no-underscore-dangle": [ 0 ],
+    "max-len": [ 2, 120 ],
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-curly-spacing": 1,
+    "react/jsx-indent": [ 2, 4 ],
+    "react/jsx-indent-props": [ 2, 4 ],
+    "react/jsx-max-props-per-line": 1,
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-props": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 0,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/require-extension": 0,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 1,
+    "react/sort-prop-types": 1,
+    "react/wrap-multilines": 1,
+    "react/jsx-filename-extension": 0,
+    "no-prototype-builtins": 0,
+    "react/no-string-refs": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/newline-after-import": 1,
+    "import/prefer-default-export": 1,
+    "import/imports-first": 1,
+    "operator-assignment": 1,
+    "no-mixed-operators": 1,
+    "jsx-quotes": [2, "prefer-single"]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "modules": true,
+      "impliedStrict": true
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "fetch":true
+  }
+}

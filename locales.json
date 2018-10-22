@@ -1,0 +1,73 @@
+{
+    "ar_AR": {
+        "label": "Arabic",
+        "displayName": "العَرَبِيَّة",
+        "callingCode": "+966",
+        "countryName": "Arabia",
+        "alias": "ar_",
+        "phoneNumberExample": "+966 49554433"
+    },
+    "de_CH": {
+        "label": "German (CH)",
+        "displayName": "Deutsch (CH)",
+        "callingCode": "+41",
+        "countryName": "Switzerland",
+        "phoneNumberExample": "+41 797775555"
+    },
+    "en_GB": {
+        "label": "English (UK)",
+        "displayName": "English (UK)",
+        "callingCode": "+44",
+        "countryName": "United Kingdom",
+        "phoneNumberExample": "+44 7777555555"
+    },
+    "en_US": {
+        "label": "English (US)",
+        "displayName": "English (US)",
+        "callingCode": "+1",
+        "countryName": "United States",
+        "phoneNumberExample": "+1 9497776666"
+    },
+    "en_ZA": {
+        "label": "English (SA)",
+        "displayName": "English (SA)",
+        "callingCode": "+27",
+        "countryName": "South Africa",
+        "phoneNumberExample": "+27 827775555"
+    },
+    "es_ES": {
+        "label": "Spanish (ES)",
+        "displayName": "Español (ES)",
+        "callingCode": "+34",
+        "countryName": "España",
+        "phoneNumberExample": "+34 649554433"
+    },
+    "fa_IR": {
+        "label": "Persian (IR)",
+        "displayName": "فارسی",
+        "callingCode": "+98",
+        "countryName": "Iran",
+        "phoneNumberExample": "+98 649554433"
+    },
+    "fr_CH": {
+        "label": "French (CH)",
+        "displayName": "Français (CH)",
+        "callingCode": "+41",
+        "countryName": "Switzerland",
+        "phoneNumberExample": "+41 797775555"
+    },
+    "it_CH": {
+        "label": "Italian (CH)",
+        "displayName": "Italiano (CH)",
+        "callingCode": "+41",
+        "countryName": "Switzerland",
+        "phoneNumberExample": "+41 797775555"
+    },
+    "nl_NL": {
+        "label": "Dutch",
+        "displayName": "Nederlands (NL)",
+        "callingCode": "+31",
+        "countryName": "Nederland",
+        "phoneNumberExample": "+31 651165256"
+    }
+}
