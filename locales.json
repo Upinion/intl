@@ -5,69 +5,79 @@
         "callingCode": "+966",
         "countryName": "Arabia",
         "alias": "ar_",
-        "phoneNumberExample": "+966 49554433"
+        "phoneNumberExample": "+966 49554433",
+        "translateCountry": false
     },
     "de_CH": {
         "label": "German (CH)",
         "displayName": "Deutsch (CH)",
         "callingCode": "+41",
         "countryName": "Switzerland",
-        "phoneNumberExample": "+41 797775555"
+        "phoneNumberExample": "+41 797775555",
+        "translateCountry": true
     },
     "en_GB": {
         "label": "English (UK)",
         "displayName": "English (UK)",
         "callingCode": "+44",
         "countryName": "United Kingdom",
-        "phoneNumberExample": "+44 7777555555"
+        "phoneNumberExample": "+44 7777555555",
+        "translateCountry": true
     },
     "en_US": {
         "label": "English (US)",
         "displayName": "English (US)",
         "callingCode": "+1",
         "countryName": "United States",
-        "phoneNumberExample": "+1 9497776666"
+        "phoneNumberExample": "+1 9497776666",
+        "translateCountry": true
     },
     "en_ZA": {
         "label": "English (SA)",
         "displayName": "English (SA)",
         "callingCode": "+27",
         "countryName": "South Africa",
-        "phoneNumberExample": "+27 827775555"
+        "phoneNumberExample": "+27 827775555",
+        "translateCountry": true
     },
     "es_ES": {
         "label": "Spanish (ES)",
         "displayName": "Español (ES)",
         "callingCode": "+34",
         "countryName": "España",
-        "phoneNumberExample": "+34 649554433"
+        "phoneNumberExample": "+34 649554433",
+        "translateCountry": true
     },
     "fa_IR": {
         "label": "Persian (IR)",
         "displayName": "فارسی",
         "callingCode": "+98",
         "countryName": "Iran",
-        "phoneNumberExample": "+98 649554433"
+        "phoneNumberExample": "+98 649554433",
+        "translateCountry": true
     },
     "fr_CH": {
         "label": "French (CH)",
         "displayName": "Français (CH)",
         "callingCode": "+41",
         "countryName": "Switzerland",
-        "phoneNumberExample": "+41 797775555"
+        "phoneNumberExample": "+41 797775555",
+        "translateCountry": true
     },
     "it_CH": {
         "label": "Italian (CH)",
         "displayName": "Italiano (CH)",
         "callingCode": "+41",
         "countryName": "Switzerland",
-        "phoneNumberExample": "+41 797775555"
+        "phoneNumberExample": "+41 797775555",
+        "translateCountry": true
     },
     "nl_NL": {
         "label": "Dutch",
         "displayName": "Nederlands (NL)",
         "callingCode": "+31",
         "countryName": "Nederland",
-        "phoneNumberExample": "+31 651165256"
+        "phoneNumberExample": "+31 651165256",
+        "translateCountry": true
     }
 }
