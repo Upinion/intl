@@ -1,6 +1,12 @@
 const locales = require('../locales.json');
 
 const Utils = {
+    /**
+     * Some of our functions expect an array with all locales, where each object in the array has 'locale' as one
+     * of the properties.
+     *
+     * @returns {Array}
+     */
     getLocalesAsArray() {
         const localeArray = [];
         Object.keys(locales).forEach((localeName) => {
