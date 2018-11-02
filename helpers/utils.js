@@ -1,3 +1,5 @@
+import { translations } from '@upinion/intl-translations';
+
 const locales = require('../locales.json');
 
 const Utils = {
@@ -96,6 +98,18 @@ const Utils = {
 
         // If everything failed return the default
         return 'en_US';
+    },
+
+    /**
+     * Get the translation files for a certain part of the system, for example mobapp/webapp/bots.
+     * A sector can include multiple repositories who share their, for example the bots-service,
+     * facebook-service and whatsapp-service have the same translations.
+     *
+     * @param system
+     * @returns {*}
+     */
+    getTranslations(sector) {
+        return translations[sector];
     }
 };
 
