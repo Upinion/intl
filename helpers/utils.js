@@ -1,6 +1,5 @@
-import { translations } from '@upinion/intl-translations';
-
 const locales = require('../locales.json');
+const translations = require('@upinion/intl-translations');
 
 const Utils = {
     /**
