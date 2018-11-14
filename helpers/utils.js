@@ -104,7 +104,7 @@ const Utils = {
      * A sector can include multiple repositories who share their, for example the bots-service,
      * facebook-service and whatsapp-service have the same translations.
      *
-     * @param system
+     * @param sector
      * @returns {*}
      */
     getTranslations(sector) {
