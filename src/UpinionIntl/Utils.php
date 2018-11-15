@@ -41,8 +41,11 @@ class Utils {
     public function getLocaleWithFallback($locale, $searchLanguageFirst = false, $availableLocales = null) {
         if (!$availableLocales) $availableLocales = array_keys($this->locales);
 
-        // Make sure the locale uses an underscore as seperator
+        // Make sure the locale uses an underscore as seperator and has the correct casing
         $locale = str_replace('-', '_', $locale);
+        if (strlen($locale) === 5) {
+            $locale = strtolower(substr($locale, 0, 2)) . substr($locale, 2, 1) . strtoupper(substr($locale, 3, 2));
+        }
 
         // First check if there is a matching locale
         if (in_array($locale, $availableLocales)) return $locale;
@@ -71,7 +74,7 @@ class Utils {
             $doubleLocale = strtolower($locale).'_'.strtoupper($locale);
             if (in_array($doubleLocale, $availableLocales)) return $doubleLocale;
 
-            $fallbackLocale = $this->_tryFallbackLocales($locale.'_', $searchLanguageFirst, $availableLocales);
+            $fallbackLocale = $this->_tryFallbackLocales(strtolower($locale).'_', $searchLanguageFirst, $availableLocales);
             if ($fallbackLocale !== null) return $fallbackLocale;
         }
 

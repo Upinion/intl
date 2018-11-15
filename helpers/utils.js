@@ -61,7 +61,10 @@ const Utils = {
      */
     getLocaleWithFallback(localeToFind, searchLanguageFirst = false, availableLocales = Object.keys(locales)) {
         // Make sure the locale uses an underscore as seperator
-        const locale = localeToFind.replace('-', '_');
+        let locale = localeToFind.replace('-', '_');
+        if (locale.length === 5) {
+            locale = `${locale.substr(0, 2).toLowerCase()}${locale.substr(2, 1)}${locale.substr(3, 2).toUpperCase()}`;
+        }
 
         // First check if there is a matching locale
         if (availableLocales.indexOf(locale) !== -1) return locale;
