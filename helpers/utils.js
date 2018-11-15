@@ -95,8 +95,8 @@ const Utils = {
             if (fallbackLocale !== null) return fallbackLocale;
         }
 
-        // If everything failed return the default
-        return 'en_US';
+        // If everything failed return the default or the first available one
+        return availableLocales.indexOf('en_US') !== -1 ? 'en_US' : availableLocales[0];
     },
 
     /**
