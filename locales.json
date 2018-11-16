@@ -89,5 +89,14 @@
         "phoneNumberExample": "+31 651165256",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Amsterdam"
+    },
+    "id_ID": {
+        "label": "Indonesian",
+        "displayName": "bahasa Indonesia",
+        "callingCode": "+62",
+        "countryName": "Indonesia",
+        "phoneNumberExample": "+62 8342024961",
+        "translateCountry": true,
+        "fallbackTimezone": "Asia/Jakarta"
     }
 }
