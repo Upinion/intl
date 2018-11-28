@@ -72,6 +72,15 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Zurich"
     },
+    "it_IT": {
+        "label": "Italian",
+        "displayName": "Italiano",
+        "callingCode": "+39",
+        "countryName": "Italy",
+        "phoneNumberExample": "+39 3397308986",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Rome"
+    },
     "it_CH": {
         "label": "Italian (CH)",
         "displayName": "Italiano (CH)",
@@ -98,5 +107,23 @@
         "phoneNumberExample": "+62 8342024961",
         "translateCountry": true,
         "fallbackTimezone": "Asia/Jakarta"
+    },
+    "pt_PT": {
+        "label": "Portuguese",
+        "displayName": "português",
+        "callingCode": "+351",
+        "countryName": "Portugal",
+        "phoneNumberExample": "+352 911234567",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Lisbon"
+    },
+    "hi_IN": {
+        "label": "Hindi",
+        "displayName": "हिन्दी",
+        "callingCode": "+91",
+        "countryName": "India",
+        "phoneNumberExample": "+91 9812345678",
+        "translateCountry": true,
+        "fallbackTimezone": "Asia/Calcutta"
     }
 }
