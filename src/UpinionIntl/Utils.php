@@ -34,11 +34,12 @@ class Utils {
 
     /**
      * @param $locale
-     * @param bool $searchLanguageFirst
-     * @param array|null $availableLocales
+     * @param bool $searchLanguageFirst When true first search language then country, otherwise reversed
+     * @param array|null $availableLocales Only pick locales from this array. If not passed just use the whole list
+     * @param bool $strict Only match on the first criteria (country or language). When there is no match return null
      * @return string Found locale
      */
-    public function getLocaleWithFallback($locale, $searchLanguageFirst = false, $availableLocales = null) {
+    public function getLocaleWithFallback($locale, $searchLanguageFirst = false, $availableLocales = null, $strict = false) {
         if (!$availableLocales) $availableLocales = array_keys($this->locales);
 
         // Make sure the locale uses an underscore as seperator and has the correct casing
@@ -62,7 +63,7 @@ class Utils {
 
         // Try to find a locale with the same country or language
         if (strlen($locale) === 5) {
-            $fallbackLocale = $this->_tryFallbackLocales($locale, $searchLanguageFirst, $availableLocales);
+            $fallbackLocale = $this->_tryFallbackLocales($locale, $searchLanguageFirst, $availableLocales, $strict);
             if ($fallbackLocale !== null) return $fallbackLocale;
         }
 
@@ -74,11 +75,12 @@ class Utils {
             $doubleLocale = strtolower($locale).'_'.strtoupper($locale);
             if (in_array($doubleLocale, $availableLocales)) return $doubleLocale;
 
-            $fallbackLocale = $this->_tryFallbackLocales(strtolower($locale).'_', $searchLanguageFirst, $availableLocales);
+            $fallbackLocale = $this->_tryFallbackLocales(strtolower($locale).'_', $searchLanguageFirst, $availableLocales, $strict);
             if ($fallbackLocale !== null) return $fallbackLocale;
         }
 
         // If everything failed return the default or the first available one
+        if ($strict) return null;
         return in_array('en_US', $availableLocales) ? 'en_US' : $availableLocales[0];
     }
 
@@ -90,17 +92,17 @@ class Utils {
      * @param array|null $availableLocales
      * @return string|null
      */
-    private function _tryFallbackLocales($locale, $searchLanguageFirst = false, $availableLocales) {
+    private function _tryFallbackLocales($locale, $searchLanguageFirst = false, $availableLocales, $strict) {
         $language = explode('_', $locale)[0];
         $country = explode('_', $locale)[1];
         $fallbackLocale = null;
 
         if ($searchLanguageFirst) {
             $fallbackLocale = $this->_findLocale($availableLocales, $language, 0);
-            if ($fallbackLocale === null) $fallbackLocale = $this->_findLocale($availableLocales, $country, 1);
+            if ($fallbackLocale === null && $strict === false) $fallbackLocale = $this->_findLocale($availableLocales, $country, 1);
         } else {
             $fallbackLocale = $this->_findLocale($availableLocales, $country, 1);
-            if ($fallbackLocale === null) $fallbackLocale = $this->_findLocale($availableLocales, $language, 0);
+            if ($fallbackLocale === null && $strict === false) $fallbackLocale = $this->_findLocale($availableLocales, $language, 0);
         }
 
         return $fallbackLocale;

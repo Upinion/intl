@@ -27,7 +27,7 @@ const Utils = {
      * @param searchLanguageFirst When set to true the language is more important than the country
      * @returns {*}
      */
-    tryFallbackLocales(locale, searchLanguageFirst = false, availableLocales) {
+    tryFallbackLocales(locale, searchLanguageFirst = false, availableLocales, strict) {
         const language = locale.split(/[-_]/)[0];
         const country = locale.split(/[-_]/)[1];
         let fallbackLocale = null;
@@ -43,10 +43,10 @@ const Utils = {
 
         if (searchLanguageFirst) {
             fallbackLocale = findLocale(language, 0);
-            if (fallbackLocale === null) fallbackLocale = findLocale(country, 1);
+            if (fallbackLocale === null && strict === false) fallbackLocale = findLocale(country, 1);
         } else {
             fallbackLocale = findLocale(country, 1);
-            if (fallbackLocale === null) fallbackLocale = findLocale(language, 0);
+            if (fallbackLocale === null && strict === false) fallbackLocale = findLocale(language, 0);
         }
         return fallbackLocale;
     },
@@ -56,10 +56,14 @@ const Utils = {
      * want to choose to most similar one, based on the alias, country and language.
      *
      * @param locale
+     * @param searchLanguageFirst When true first search language then country, otherwise reversed
      * @param array availableLocales Only pick locales from this array. If not passed just use the whole list
+     * @param strict Only match on the first criteria (country or language). When there is no match return null
      * @returns {*}
      */
-    getLocaleWithFallback(localeToFind, searchLanguageFirst = false, availableLocales = Object.keys(locales)) {
+    getLocaleWithFallback(
+        localeToFind, searchLanguageFirst = false, availableLocales = Object.keys(locales), strict = false
+    ) {
         // Make sure the locale uses an underscore as seperator
         let locale = localeToFind.replace('-', '_');
         if (locale.length === 5) {
@@ -81,7 +85,7 @@ const Utils = {
 
         // If we don't have a match yet we will try the fallbacks with the current locale
         if (locale.length === 5) {
-            fallbackLocale = this.tryFallbackLocales(locale, searchLanguageFirst, availableLocales);
+            fallbackLocale = this.tryFallbackLocales(locale, searchLanguageFirst, availableLocales, strict);
         }
         if (fallbackLocale !== null) return fallbackLocale;
 
@@ -94,11 +98,12 @@ const Utils = {
                 return `${locale}_${locale.toUpperCase()}`;
             }
 
-            fallbackLocale = this.tryFallbackLocales(`${locale}_`, searchLanguageFirst, availableLocales);
+            fallbackLocale = this.tryFallbackLocales(`${locale}_`, searchLanguageFirst, availableLocales, strict);
             if (fallbackLocale !== null) return fallbackLocale;
         }
 
         // If everything failed return the default or the first available one
+        if (strict === true) return null;
         return availableLocales.indexOf('en_US') !== -1 ? 'en_US' : availableLocales[0];
     },
 
