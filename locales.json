@@ -101,7 +101,7 @@
     },
     "id_ID": {
         "label": "Indonesian",
-        "displayName": "bahasa Indonesia",
+        "displayName": "Bahasa Indonesia",
         "callingCode": "+62",
         "countryName": "Indonesia",
         "phoneNumberExample": "+62 8342024961",
@@ -110,7 +110,7 @@
     },
     "pt_PT": {
         "label": "Portuguese",
-        "displayName": "português",
+        "displayName": "Português",
         "callingCode": "+351",
         "countryName": "Portugal",
         "phoneNumberExample": "+352 911234567",
