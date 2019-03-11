@@ -77,7 +77,7 @@ const Utils = {
 
         // Then check if there is a locale with a matching alias
         availableLocales.forEach((availableLocale) => {
-            if (locales[availableLocale].alias && locale.indexOf(locales[availableLocale].alias) === 0) {
+            if (locales[availableLocale] && locales[availableLocale].alias && locale.indexOf(locales[availableLocale].alias) === 0) {
                 fallbackLocale = availableLocale;
             }
         });

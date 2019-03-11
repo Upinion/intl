@@ -56,6 +56,7 @@ class Utils {
         // Then check if there is a locale with a matching alias
         foreach ($availableLocales as $availableLocale) {
             if (
+                array_key_exists($availableLocale, $this->locales) &&
                 array_key_exists('alias', $this->locales[$availableLocale]) &&
                 stripos($locale, $this->locales[$availableLocale]['alias']) === 0
             ) return $availableLocale;
