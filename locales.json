@@ -18,6 +18,15 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Zurich"
     },
+    "de_DE": {
+        "label": "German",
+        "displayName": "Deutsch",
+        "callingCode": "+49",
+        "countryName": "Germany",
+        "phoneNumberExample": "+49 1731234567",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Berlin"
+    },
     "en_GB": {
         "label": "English (UK)",
         "displayName": "English (UK)",
