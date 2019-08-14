@@ -117,6 +117,28 @@ const Utils = {
      */
     getTranslations(sector) {
         return translations[sector];
+    },
+
+    /**
+     * Return the locale that matches the phone number
+     *
+     * @param phoneNumber
+     * @param currentLocale
+     * @param returnCurrent When true it returns the current locale if there is no match. When false it returns null
+     * @returns {null}
+     */
+    getLocaleFromPhoneNumber(phoneNumber, currentLocale, returnCurrent = true) {
+        let foundLocale = returnCurrent ? currentLocale : null;
+
+        Object.keys(locales).forEach((localeName) => {
+            let e123Number = phoneNumber;
+            if (phoneNumber.substr(0, 1) !== '+') e123Number = `+${phoneNumber}`;
+            if (e123Number.indexOf(locales[localeName].callingCode) === 0) {
+                foundLocale = localeName;
+            }
+        });
+
+        return foundLocale;
     }
 };
 
