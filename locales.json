@@ -134,5 +134,14 @@
         "phoneNumberExample": "+91 9812345678",
         "translateCountry": true,
         "fallbackTimezone": "Asia/Calcutta"
+    },
+    "fr_ML": {
+        "label": "French (ML)",
+        "displayName": "Français",
+        "callingCode": "+223",
+        "countryName": "Mali",
+        "phoneNumberExample": "+223 20291449",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Bamako"
     }
 }

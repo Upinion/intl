@@ -1052,6 +1052,11 @@
     "dial_code": "+590" 
 },
 {
+    "code": "ML",
+    "name": "Mali",
+    "dial_code": "+223" 
+},
+{
     "code": "PM",
     "valid_call": true,
     "name": "Saint Pierre and Miquelon",
