@@ -143,5 +143,33 @@
         "phoneNumberExample": "+223 20291449",
         "translateCountry": true,
         "fallbackTimezone": "Africa/Bamako"
+    },
+    "am_ET": {
+        "label": "Amharic",
+        "displayName": "Amharic (ET)",
+        "callingCode": "+251",
+        "countryName": "Ethiopia",
+        "phoneNumberExample": "+251 12233443",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Addis_Ababa"
+    },
+    "so_SO": {
+        "label": "Somali",
+        "displayName": "Somali",
+        "callingCode": "+252",
+        "countryName": "Somalia",
+        "phoneNumberExample": "+252 12233443",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Mogadishu"
+    },
+
+    "ti_ET": {
+        "label": "Tigrinya",
+        "displayName": "Tigrinya (ET)",
+        "callingCode": "+251",
+        "countryName": "Ethiopia",
+        "phoneNumberExample": "+251 12233443",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Addis_Ababa"
     }
 }
