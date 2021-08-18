@@ -162,7 +162,6 @@
         "translateCountry": true,
         "fallbackTimezone": "Africa/Mogadishu"
     },
-
     "ti_ET": {
         "label": "Tigrinya",
         "displayName": "Tigrinya (ET)",
@@ -171,5 +170,14 @@
         "phoneNumberExample": "+251 12233443",
         "translateCountry": true,
         "fallbackTimezone": "Africa/Addis_Ababa"
+    },
+    "ku_TR": {
+        "label": "Kurdish",
+        "displayName": "Kurdish (TR)",
+        "callingCode": "+90",
+        "countryName": "Turkey",
+        "phoneNumberExample": "+90 112 3321124",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Istanbul"
     }
 }
