@@ -10,13 +10,13 @@
         "fallbackTimezone": "Asia/Riyadh"
     },
     "bn_BD": {
-        "label": "Bengali (Bangladesh)",
-        "displayName": "বাংলা ",
+        "label": "Bengali",
+        "displayName": "Bengali (BD)",
         "callingCode": "+880",
         "countryName": "Bangladesh",
         "phoneNumberExample": "+880 1495443322",
         "translateCountry": true,
-        "fallbackTimezone": "Europe/Zurich"
+        "fallbackTimezone": "Asia/Dhaka"
     },
     "de_CH": {
         "label": "German (CH)",
@@ -73,13 +73,13 @@
         "fallbackTimezone": "Europe/Madrid"
     },
     "fa_AF": {
-        "label": "Dari (AF)",
-        "displayName": "فارسی",
+        "label": "Dari",
+        "displayName": "Dari (AF)",
         "callingCode": "+93",
         "countryName": "Afghanistan",
         "phoneNumberExample": "+93 649554433",
         "translateCountry": true,
-        "fallbackTimezone": "Asia/Tehran"
+        "fallbackTimezone": "Asia/Kabul"
     },
     "fa_IR": {
         "label": "Persian (IR)",
