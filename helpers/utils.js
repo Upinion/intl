@@ -85,7 +85,7 @@ const Utils = {
 
         // If we don't have a match yet we will try the fallbacks with the current locale
         if (locale.length === 5) {
-            fallbackLocale = this.tryFallbackLocales(locale, searchLanguageFirst, availableLocales, strict);
+            fallbackLocale = Utils.tryFallbackLocales(locale, searchLanguageFirst, availableLocales, strict);
         }
         if (fallbackLocale !== null) return fallbackLocale;
 
@@ -98,7 +98,7 @@ const Utils = {
                 return `${locale}_${locale.toUpperCase()}`;
             }
 
-            fallbackLocale = this.tryFallbackLocales(`${locale}_`, searchLanguageFirst, availableLocales, strict);
+            fallbackLocale = Utils.tryFallbackLocales(`${locale}_`, searchLanguageFirst, availableLocales, strict);
             if (fallbackLocale !== null) return fallbackLocale;
         }
 
