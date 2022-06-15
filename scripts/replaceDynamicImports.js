@@ -17,7 +17,6 @@ _.uniq(languageNames).forEach((languageName) => {
         `LocaleData.${languageName} = require('react-native-experimental-intl/locale-data/${languageName}');\n`
     );
 });
-localeDataImport += `PACKAGE: ${process.env.npm_package_name}`;
 
 const newFile = file.replace(/const LocaleData = {};[\s\S]+\n\nmodule/gi, `${localeDataImport}\nmodule`);
 
