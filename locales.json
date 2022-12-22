@@ -206,5 +206,32 @@
         "phoneNumberExample": "+90 112 3321124",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Istanbul"
+    },
+    "ru_RU": {
+        "label": "Russian",
+        "displayName": "Russian",
+        "callingCode": "+7",
+        "countryName": "Russia",
+        "phoneNumberExample": "+7 495 1234567",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Moscow"
+    },
+    "hu_HU": {
+        "label": "Hungarian",
+        "displayName": "Hungarian",
+        "callingCode": "+36",
+        "countryName": "Hungary",
+        "phoneNumberExample": "+36 1 7866658",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Budapest"
+    },
+    "uk_UA": {
+        "label": "Ukranian",
+        "displayName": "Ukranian",
+        "callingCode": "+380",
+        "countryName": "Ukraine",
+        "phoneNumberExample": "+380 44 1231233",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Kyiv"
     }
 }
