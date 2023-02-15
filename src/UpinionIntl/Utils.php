@@ -93,7 +93,7 @@ class Utils {
      * @param array|null $availableLocales
      * @return string|null
      */
-    private function _tryFallbackLocales($locale, $searchLanguageFirst = false, $availableLocales, $modeStrict) {
+    private function _tryFallbackLocales($locale, $searchLanguageFirst, $availableLocales, $modeStrict) {
         $language = explode('_', $locale)[0];
         $country = explode('_', $locale)[1];
         $fallbackLocale = null;
