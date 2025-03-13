@@ -233,5 +233,14 @@
         "phoneNumberExample": "+380 44 1231233",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Kyiv"
+    },
+    "sw-CD": {
+        "label": "Swahili",
+        "displayName": "Swahili",
+        "callingCode": "+243",
+        "countryName": "DR Congo",
+        "phoneNumberExample": "+243 123456789",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Lubumbashi"
     }
 }
