@@ -1,7 +1,7 @@
 {
     "name": "upinion/intl",
     "minimum-stability": "dev",
-    "version": "1.14.0",
+    "version": "1.14.2",
     "require": {
         "upinion/intl-translations": "^1.0"
     },

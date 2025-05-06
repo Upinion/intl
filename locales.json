@@ -234,7 +234,7 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Kyiv"
     },
-    "sw-CD": {
+    "sw_CD": {
         "label": "Swahili",
         "displayName": "Swahili",
         "callingCode": "+243",
