@@ -1,6 +1,6 @@
 {
     "name": "@upinion/intl",
-    "version": "1.14.2",
+    "version": "1.15.0",
     "description": "Everything related to the internationalization of our systems.",
     "main": "index.js",
     "repository": {

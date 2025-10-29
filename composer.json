@@ -1,9 +1,9 @@
 {
     "name": "upinion/intl",
     "minimum-stability": "dev",
-    "version": "1.14.2",
+    "version": "1.15.0",
     "require": {
-        "upinion/intl-translations": "^1.0"
+        "upinion/intl-translations": "^1.16"
     },
     "repositories": [
         {
