@@ -1,13 +1,31 @@
 {
+    "am_ET": {
+        "label": "Amharic",
+        "displayName": "Amharic (ET)",
+        "callingCode": "+251",
+        "countryName": "Ethiopia",
+        "phoneNumberExample": "+251 12233443",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Addis_Ababa"
+    },
     "ar_AR": {
         "label": "Arabic",
-        "displayName": "العَرَبِيَّة",
+        "displayName": "\u0627\u0644\u0639\u064e\u0631\u064e\u0628\u0650\u064a\u064e\u0651\u0629",
         "callingCode": "+966",
         "countryName": "Arabia",
         "alias": "ar_",
         "phoneNumberExample": "+966 49554433",
         "translateCountry": false,
         "fallbackTimezone": "Asia/Riyadh"
+    },
+    "bm_ML": {
+        "label": "Bambara",
+        "displayName": "Bamanankan",
+        "callingCode": "+223",
+        "countryName": "Mali",
+        "phoneNumberExample": "+223 65123456",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Bamako"
     },
     "bn_BD": {
         "label": "Bengali",
@@ -65,9 +83,9 @@
     },
     "es_ES": {
         "label": "Spanish (ES)",
-        "displayName": "Español",
+        "displayName": "Espa\u00f1ol",
         "callingCode": "+34",
-        "countryName": "España",
+        "countryName": "Espa\u00f1a",
         "phoneNumberExample": "+34 649554433",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Madrid"
@@ -83,7 +101,7 @@
     },
     "fa_IR": {
         "label": "Persian (IR)",
-        "displayName": "فارسی",
+        "displayName": "\u0641\u0627\u0631\u0633\u06cc",
         "callingCode": "+98",
         "countryName": "Iran",
         "phoneNumberExample": "+98 649554433",
@@ -92,7 +110,61 @@
     },
     "fr_CH": {
         "label": "French (CH)",
-        "displayName": "Français",
+        "displayName": "Fran\u00e7ais",
+        "callingCode": "+41",
+        "countryName": "Switzerland",
+        "phoneNumberExample": "+41 797775555",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Zurich"
+    },
+    "fr_ML": {
+        "label": "French (ML)",
+        "displayName": "Fran\u00e7ais",
+        "callingCode": "+223",
+        "countryName": "Mali",
+        "phoneNumberExample": "+223 20291449",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Bamako"
+    },
+    "ha_NE": {
+        "label": "Hausa (NE)",
+        "displayName": "Hausa",
+        "callingCode": "+227",
+        "countryName": "Niger",
+        "phoneNumberExample": "+227 93123456",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Niamey"
+    },
+    "hi_IN": {
+        "label": "Hindi",
+        "displayName": "\u0939\u093f\u0928\u094d\u0926\u0940",
+        "callingCode": "+91",
+        "countryName": "India",
+        "phoneNumberExample": "+91 9812345678",
+        "translateCountry": true,
+        "fallbackTimezone": "Asia/Calcutta"
+    },
+    "hu_HU": {
+        "label": "Hungarian",
+        "displayName": "Hungarian",
+        "callingCode": "+36",
+        "countryName": "Hungary",
+        "phoneNumberExample": "+36 1 7866658",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Budapest"
+    },
+    "id_ID": {
+        "label": "Indonesian",
+        "displayName": "Bahasa Indonesia",
+        "callingCode": "+62",
+        "countryName": "Indonesia",
+        "phoneNumberExample": "+62 8342024961",
+        "translateCountry": true,
+        "fallbackTimezone": "Asia/Jakarta"
+    },
+    "it_CH": {
+        "label": "Italian (CH)",
+        "displayName": "Italiano (CH)",
         "callingCode": "+41",
         "countryName": "Switzerland",
         "phoneNumberExample": "+41 797775555",
@@ -108,14 +180,14 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Rome"
     },
-    "it_CH": {
-        "label": "Italian (CH)",
-        "displayName": "Italiano (CH)",
-        "callingCode": "+41",
-        "countryName": "Switzerland",
-        "phoneNumberExample": "+41 797775555",
+    "ku_TR": {
+        "label": "Kurdish",
+        "displayName": "Kurdish (TR)",
+        "callingCode": "+90",
+        "countryName": "Turkey",
+        "phoneNumberExample": "+90 112 3321124",
         "translateCountry": true,
-        "fallbackTimezone": "Europe/Zurich"
+        "fallbackTimezone": "Europe/Istanbul"
     },
     "nl_NL": {
         "label": "Dutch",
@@ -126,86 +198,14 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Amsterdam"
     },
-    "id_ID": {
-        "label": "Indonesian",
-        "displayName": "Bahasa Indonesia",
-        "callingCode": "+62",
-        "countryName": "Indonesia",
-        "phoneNumberExample": "+62 8342024961",
-        "translateCountry": true,
-        "fallbackTimezone": "Asia/Jakarta"
-    },
     "pt_PT": {
         "label": "Portuguese",
-        "displayName": "Português",
+        "displayName": "Portugu\u00eas",
         "callingCode": "+351",
         "countryName": "Portugal",
         "phoneNumberExample": "+352 911234567",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Lisbon"
-    },
-    "hi_IN": {
-        "label": "Hindi",
-        "displayName": "हिन्दी",
-        "callingCode": "+91",
-        "countryName": "India",
-        "phoneNumberExample": "+91 9812345678",
-        "translateCountry": true,
-        "fallbackTimezone": "Asia/Calcutta"
-    },
-    "fr_ML": {
-        "label": "French (ML)",
-        "displayName": "Français",
-        "callingCode": "+223",
-        "countryName": "Mali",
-        "phoneNumberExample": "+223 20291449",
-        "translateCountry": true,
-        "fallbackTimezone": "Africa/Bamako"
-    },
-    "am_ET": {
-        "label": "Amharic",
-        "displayName": "Amharic (ET)",
-        "callingCode": "+251",
-        "countryName": "Ethiopia",
-        "phoneNumberExample": "+251 12233443",
-        "translateCountry": true,
-        "fallbackTimezone": "Africa/Addis_Ababa"
-    },
-    "so_SO": {
-        "label": "Somali",
-        "displayName": "Somali",
-        "callingCode": "+252",
-        "countryName": "Somalia",
-        "phoneNumberExample": "+252 12233443",
-        "translateCountry": true,
-        "fallbackTimezone": "Africa/Mogadishu"
-    },
-    "ti_ET": {
-        "label": "Tigrinya",
-        "displayName": "Tigrinya (ET)",
-        "callingCode": "+251",
-        "countryName": "Ethiopia",
-        "phoneNumberExample": "+251 12233443",
-        "translateCountry": true,
-        "fallbackTimezone": "Africa/Addis_Ababa"
-    },
-    "ku_TR": {
-        "label": "Kurdish",
-        "displayName": "Kurdish (TR)",
-        "callingCode": "+90",
-        "countryName": "Turkey",
-        "phoneNumberExample": "+90 112 3321124",
-        "translateCountry": true,
-        "fallbackTimezone": "Europe/Istanbul"
-    },
-    "tr_TR": {
-        "label": "Turkish",
-        "displayName": "Turkish",
-        "callingCode": "+90",
-        "countryName": "Turkey",
-        "phoneNumberExample": "+90 112 3321124",
-        "translateCountry": true,
-        "fallbackTimezone": "Europe/Istanbul"
     },
     "ru_RU": {
         "label": "Russian",
@@ -216,23 +216,14 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Moscow"
     },
-    "hu_HU": {
-        "label": "Hungarian",
-        "displayName": "Hungarian",
-        "callingCode": "+36",
-        "countryName": "Hungary",
-        "phoneNumberExample": "+36 1 7866658",
+    "so_SO": {
+        "label": "Somali",
+        "displayName": "Somali",
+        "callingCode": "+252",
+        "countryName": "Somalia",
+        "phoneNumberExample": "+252 12233443",
         "translateCountry": true,
-        "fallbackTimezone": "Europe/Budapest"
-    },
-    "uk_UA": {
-        "label": "Ukranian",
-        "displayName": "Ukranian",
-        "callingCode": "+380",
-        "countryName": "Ukraine",
-        "phoneNumberExample": "+380 44 1231233",
-        "translateCountry": true,
-        "fallbackTimezone": "Europe/Kyiv"
+        "fallbackTimezone": "Africa/Mogadishu"
     },
     "sw_CD": {
         "label": "Swahili",
@@ -242,5 +233,32 @@
         "phoneNumberExample": "+243 123456789",
         "translateCountry": true,
         "fallbackTimezone": "Africa/Lubumbashi"
+    },
+    "ti_ET": {
+        "label": "Tigrinya",
+        "displayName": "Tigrinya (ET)",
+        "callingCode": "+251",
+        "countryName": "Ethiopia",
+        "phoneNumberExample": "+251 12233443",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Addis_Ababa"
+    },
+    "tr_TR": {
+        "label": "Turkish",
+        "displayName": "Turkish",
+        "callingCode": "+90",
+        "countryName": "Turkey",
+        "phoneNumberExample": "+90 112 3321124",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Istanbul"
+    },
+    "uk_UA": {
+        "label": "Ukranian",
+        "displayName": "Ukranian",
+        "callingCode": "+380",
+        "countryName": "Ukraine",
+        "phoneNumberExample": "+380 44 1231233",
+        "translateCountry": true,
+        "fallbackTimezone": "Europe/Kyiv"
     }
 }
