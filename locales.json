@@ -189,6 +189,16 @@
         "translateCountry": true,
         "fallbackTimezone": "Europe/Istanbul"
     },
+    "kz_UG": {
+        "label": "Konjo",
+        "displayName": "Lhukonzo",
+        "iso639_3": "koo",
+        "callingCode": "+256",
+        "countryName": "Uganda",
+        "phoneNumberExample": "+256 712345678",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Kampala"
+    },
     "nl_NL": {
         "label": "Dutch",
         "displayName": "Nederlands (NL)",
@@ -260,5 +270,25 @@
         "phoneNumberExample": "+380 44 1231233",
         "translateCountry": true,
         "fallbackTimezone": "Europe/Kyiv"
+    },
+    "vm_MZ": {
+        "label": "Makhuwa",
+        "displayName": "Emakhuwa",
+        "iso639_3": "vmw",
+        "callingCode": "+258",
+        "countryName": "Mozambique",
+        "phoneNumberExample": "+258 821234567",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Maputo"
+    },
+    "wo_SN": {
+        "label": "Wolof",
+        "displayName": "Wolof",
+        "iso639_3": "wol",
+        "callingCode": "+221",
+        "countryName": "Senegal",
+        "phoneNumberExample": "+221 771234567",
+        "translateCountry": true,
+        "fallbackTimezone": "Africa/Dakar"
     }
 }
