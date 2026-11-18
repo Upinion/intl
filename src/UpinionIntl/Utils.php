@@ -44,8 +44,10 @@ class Utils {
 
         // Make sure the locale uses an underscore as seperator and has the correct casing
         $locale = str_replace('-', '_', $locale);
-        if (strlen($locale) === 5) {
-            $locale = strtolower(substr($locale, 0, 2)) . substr($locale, 2, 1) . strtoupper(substr($locale, 3, 2));
+        $localeParts = explode('_', $locale);
+        $hasCountry = count($localeParts) === 2;
+        if ($hasCountry) {
+            $locale = strtolower($localeParts[0]) . '_' . strtoupper($localeParts[1]);
         }
 
         // First check if there is a matching locale
@@ -63,7 +65,7 @@ class Utils {
         }
 
         // Try to find a locale with the same country or language
-        if (strlen($locale) === 5) {
+        if ($hasCountry) {
             $fallbackLocale = $this->_tryFallbackLocales($locale, $searchLanguageFirst, $availableLocales, $modeStrict);
             if ($fallbackLocale !== null) return $fallbackLocale;
         }

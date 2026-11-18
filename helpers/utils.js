@@ -66,8 +66,10 @@ const Utils = {
     ) {
         // Make sure the locale uses an underscore as seperator
         let locale = localeToFind.replace('-', '_');
-        if (locale.length === 5) {
-            locale = `${locale.substr(0, 2).toLowerCase()}${locale.substr(2, 1)}${locale.substr(3, 2).toUpperCase()}`;
+        const localeParts = locale.split('_');
+        const hasCountry = localeParts.length === 2;
+        if (hasCountry) {
+            locale = `${localeParts[0].toLowerCase()}_${localeParts[1].toUpperCase()}`;
         }
 
         // First check if there is a matching locale
@@ -84,7 +86,7 @@ const Utils = {
         if (fallbackLocale !== null) return fallbackLocale;
 
         // If we don't have a match yet we will try the fallbacks with the current locale
-        if (locale.length === 5) {
+        if (hasCountry) {
             fallbackLocale = Utils.tryFallbackLocales(locale, searchLanguageFirst, availableLocales, strict);
         }
         if (fallbackLocale !== null) return fallbackLocale;
